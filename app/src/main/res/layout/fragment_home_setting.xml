@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A4250"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="客服qq：34245454"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="开黑qq群：4354543"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="微信公众号：43526523"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/home_setting_black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/agora_blue"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黑名单"
+                android:clickable="true"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:clickable="true"
+                android:src="@mipmap/icon_home_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_setting_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/agora_blue"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享给好友"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@mipmap/icon_home_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_setting_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/agora_blue"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检查更新"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@mipmap/icon_home_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_setting_about"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/agora_blue"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于我们"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@mipmap/icon_home_arrow" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/home_setting_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="退出登录"
+            />
+    </LinearLayout>
+  </LinearLayout>

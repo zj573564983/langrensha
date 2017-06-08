@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home_recharge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chargeback"
+    tools:context="com.wzc.lrsdemo.ui.RechargeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/grey_300" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/yellow_900" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recylerview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="12dp" />-->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="选择充值金币:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/coinback1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:background="@drawable/coin">
+
+                    <RelativeLayout
+                        android:background="@drawable/text_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥5"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/textView2" />
+
+                        <ImageView
+                            android:id="@+id/coinImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin"
+                            android:layout_alignTop="@+id/textView"
+                            android:layout_toEndOf="@+id/textView2"
+                            android:layout_marginStart="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="50金币"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/coinImage" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/coinback2"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@drawable/coin">
+
+                    <RelativeLayout
+                        android:background="@drawable/text_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥10"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/textView4" />
+
+                        <ImageView
+                            android:id="@+id/coinImage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin"
+                            android:layout_marginStart="12dp"
+                            android:layout_alignBottom="@+id/textView3"
+                            android:layout_toEndOf="@+id/textView4" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="100金币"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/coinImage2" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/coinback3"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@drawable/coin">
+
+                    <RelativeLayout
+                        android:background="@drawable/text_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥20"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/coinImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin"
+                            android:layout_marginStart="14dp"
+                            android:layout_alignBottom="@+id/textView"
+                            android:layout_toEndOf="@id/textView2" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="200金币"
+                            android:layout_margin="8dp"
+                            android:textSize="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/coinImage" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/coinback4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:padding="8dp"
+                    android:background="@drawable/coin">
+
+                    <RelativeLayout
+                        android:background="@drawable/text_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥50"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/textView4" />
+
+                        <ImageView
+                            android:id="@+id/coinImage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin"
+                            android:layout_marginStart="12dp"
+                            android:layout_alignBottom="@+id/textView3"
+                            android:layout_toEndOf="@+id/textView4" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="500金币"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/coinImage2" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/coinback5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:background="@drawable/coin">
+
+                    <RelativeLayout
+                        android:background="@drawable/text_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥100"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/textView2" />
+
+                        <ImageView
+                            android:id="@+id/coinImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_coin"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/textView2" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000金币"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/coinImage" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/coinback6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:background="@drawable/coin">
+
+                    <RelativeLayout
+                        android:background="@drawable/text_bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="￥500"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/coinImage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_coin"
+                            android:layout_toEndOf="@+id/textView4" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerVertical="true"
+                            android:layout_margin="1dp"
+                            android:layout_toEndOf="@id/coinImage2"
+                            android:text="5000金币"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tvPay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:text="立即充值"
+        android:textColor="@color/text_gray" />
+
+</RelativeLayout>

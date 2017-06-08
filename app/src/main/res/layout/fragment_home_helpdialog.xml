@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_width="fill_parent"
+    android:layout_height="370dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_gravity="center"
+        android:background="@drawable/helpback"
+        android:clickable="true"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/helpback"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="5.0dip"
+                android:layout_weight="1"
+                android:visibility="visible" />
+            <ImageView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="40.0dip"
+                android:src="@drawable/title"
+                android:layout_weight="2"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="5.0dip"
+                android:layout_weight="1"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/instruction" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/dict"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="1dp"
+            android:clickable="true"
+            android:src="@drawable/dict" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:background="@drawable/home_round_iv"
+            android:src="@drawable/close" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment_setting_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/aboutus"
+    tools:context="com.wzc.lrsdemo.ui.AboutActivity"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="516dp"
+        android:src="@drawable/aboutus"
+        android:layout_weight="0.75" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="copyright © 2017 android.com All rights reserved"
+        />
+
+</LinearLayout>
